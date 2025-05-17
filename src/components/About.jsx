@@ -23,7 +23,7 @@ const About = () => {
                         <img src="/assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
 
                         <div>
-                            <p className="grid-headtext">Hi, I’m Ammog Warrier</p>
+                            <p className="grid-headtext">Hi, I'm Ammog Warrier</p>
                             <p className="grid-subtext">
                                 With 1 years of experience, I have honed my skills in both frontend and backend dev, creating dynamic
                                 and responsive websites.
@@ -34,12 +34,12 @@ const About = () => {
 
                 <div className="col-span-1 xl:row-span-3">
                     <div className="grid-container">
-                        <img src="/assets/grid2.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
+                        <img src="/assets/tech.png" alt="tech-stack" className="w-full sm:h-[276px] h-fit object-contain" />
 
                         <div>
                             <p className="grid-headtext">Tech Stack</p>
                             <p className="grid-subtext">
-                                I specialize in a few of languages, frameworks, and tools that allow me to build robust and scalable
+                                I specialize in a few  languages, frameworks, and tools that allow me to build robust and scalable
                                 applications
                             </p>
                         </div>
@@ -62,7 +62,7 @@ const About = () => {
                             />
                         </div>
                         <div>
-                            <p className="grid-headtext">I’m very flexible with time zone communications & locations</p>
+                            <p className="grid-headtext">I'm very flexible with time zone communications & locations</p>
                             <p className="grid-subtext">I&apos;m based in Chennai, India and open to remote work worldwide.</p>
                             <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
                         </div>
