@@ -23,19 +23,15 @@ body {
   }
 
   .nav-ul {
-    @apply flex flex-col items-center gap-4 sm:flex-row md:gap-6 relative z-20;
+    @apply flex items-center gap-4 md:gap-6;
   }
 
   .nav-li {
-    @apply text-neutral-400 hover:text-white font-generalsans max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
+    @apply text-neutral-400 hover:text-white font-generalsans;
   }
 
   .nav-li_a {
-    @apply text-lg md:text-base hover:text-white transition-colors;
-  }
-
-  .nav-sidebar {
-    @apply absolute left-0 right-0 bg-black-200 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden block;
+    @apply text-sm md:text-base hover:text-white transition-colors whitespace-nowrap;
   }
 
   .text-gray_gradient {
@@ -148,6 +144,58 @@ body {
   /*  footer */
   .social-icon {
     @apply w-12 h-12 rounded-full flex justify-center items-center bg-black-300 border border-black-200;
+  }
+
+  /* Add smooth scrolling for the entire page */
+  html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Improve touch targets on mobile */
+  @media (max-width: 640px) {
+    .nav-ul {
+      @apply gap-2;
+    }
+
+    .nav-li_a {
+      @apply text-xs;
+    }
+
+    .btn {
+      @apply py-4;
+    }
+
+    .tech-logo {
+      @apply w-12 h-12;
+    }
+  }
+
+  /* Improve project card responsiveness */
+  @media (max-width: 640px) {
+    .grid-container {
+      @apply p-4;
+    }
+
+    .head-text {
+      @apply text-2xl;
+    }
+  }
+
+  /* Add animation for dropdown */
+  @keyframes dropdownFade {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .dropdown-enter {
+    animation: dropdownFade 0.2s ease-out forwards;
   }
 }
 
